@@ -1,0 +1,45 @@
+# Trivia! (CS50 Problem Set 8)
+
+A small interactive trivia webpage built for Harvard's CS50 Problem Set 8.  
+This project uses HTML, CSS, and JavaScript to implement:
+
+- **Part 1 — Multiple Choice**: buttons that change color on click and show "Correct!" or "Incorrect".
+- **Part 2 — Free Response**: a text input and submit button; the input changes color and shows feedback.
+- Accessible feedback using `aria-live` and keyboard support for the free-response Enter key.
+
+## Files
+- `index.html` — main page and markup
+- `styles.css` — styles for layout and feedback classes
+- `script.js` — JavaScript that implements the quiz logic
+
+## How to run locally
+
+1. Clone this repository:
+   ```bash
+   git clone <your-repo-url>
+   cd <repo-folder>
+
+Start a local web server in the project directory:
+
+Using http-server (recommended if you have Node):
+
+npm install -g http-server
+http-server
+
+
+Then open http://localhost:8080.
+
+Or using Python:
+
+python3 -m http.server 8000
+
+
+Then open http://localhost:8000.
+
+Interact with the questions and test both correct and incorrect responses.
+
+Testing
+
+Click a multiple-choice option and verify the button turns green (correct) or red (incorrect) and the feedback text appears below.
+
+Type the free response and press Submit or Enter. Correct answers light the input green and show “Correct!”.
