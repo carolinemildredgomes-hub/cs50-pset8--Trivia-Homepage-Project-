@@ -1,0 +1,25 @@
+HTML Tags Used:
+1. h1
+2. h2
+3. p
+4. a
+5. ul
+6. li
+7. img
+8. div
+9. footer
+10. section
+
+CSS Properties Used:
+1. font-family
+2. background-color
+3. color
+4. font-size
+5. padding
+6. border-radius
+
+Bootstrap Usage:
+- Used navbar, buttons, jumbotron, grid layout for responsive design.
+
+JavaScript Usage:
+- Added alert on button click and hover effects on buttons for interactivity.

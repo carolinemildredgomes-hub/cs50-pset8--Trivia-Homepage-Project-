@@ -2,68 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trivia!</title>
-    <link href="styles.css" rel="stylesheet">
-    <script defer src="script.js"></script>
+    <title>Home - MySite</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Trivia!</h1>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">MySite</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="jumbotron text-center">
+  <h1>Welcome to MySite</h1>
+  <p>Explore our amazing content and services!</p>
+  <a href="about.html" class="btn btn-primary btn-lg">Learn More</a>
+</div>
+
+<!-- Features Section -->
+<div class="container text-center">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Feature One</h2>
+      <p>High-quality content for everyone.</p>
+      <button class="btn btn-success">Read More</button>
     </div>
-
-    <div class="container">
-        <!-- Part 1: Multiple Choice -->
-        <div class="section" id="mcq1">
-            <h2>Part 1: Multiple Choice</h2>
-            <hr>
-            <h3 id="q1">What is the approximate ratio of people to sheep in New Zealand?</h3>
-            <div class="choices" role="group" aria-labelledby="q1">
-                <button class="choice" data-correct="false">6 people per 1 sheep</button>
-                <button class="choice" data-correct="false">3 people per 1 sheep</button>
-                <button class="choice" data-correct="false">1 person per 1 sheep</button>
-                <button class="choice" data-correct="false">1 person per 3 sheep</button>
-                <button class="choice" data-correct="true">1 person per 6 sheep</button>
-            </div>
-            <p class="feedback"></p>
-        </div>
-
-        <!-- Extra Multiple Choice -->
-        <div class="section" id="mcq2">
-            <h2>Extra Multiple Choice</h2>
-            <hr>
-            <h3 id="q2">Which planet is known as the Red Planet?</h3>
-            <div class="choices" role="group" aria-labelledby="q2">
-                <button class="choice" data-correct="false">Venus</button>
-                <button class="choice" data-correct="true">Mars</button>
-                <button class="choice" data-correct="false">Jupiter</button>
-                <button class="choice" data-correct="false">Saturn</button>
-            </div>
-            <p class="feedback"></p>
-        </div>
-
-        <!-- Part 2: Free Response -->
-        <div class="section" id="free1">
-            <h2>Part 2: Free Response</h2>
-            <hr>
-            <h3 id="q3">In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
-            <div class="free-row">
-                <input id="free-input1" type="text" placeholder="Type your answer">
-                <button id="free-check1">Submit</button>
-            </div>
-            <p class="feedback"></p>
-        </div>
-
-        <!-- Extra Free Response -->
-        <div class="section" id="free2">
-            <h2>Extra Free Response</h2>
-            <hr>
-            <h3 id="q4">Who wrote the play “Romeo and Juliet”?</h3>
-            <div class="free-row">
-                <input id="free-input2" type="text" placeholder="Type your answer">
-                <button id="free-check2">Submit</button>
-            </div>
-            <p class="feedback"></p>
-        </div>
+    <div class="col-md-4">
+      <h2>Feature Two</h2>
+      <p>Interactive experiences you will love.</p>
+      <button class="btn btn-success">Read More</button>
     </div>
+    <div class="col-md-4">
+      <h2>Feature Three</h2>
+      <p>Accessible on all devices.</p>
+      <button class="btn btn-success">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+  &copy; 2025 MySite. All rights reserved.
+</footer>
+
+<script>
+  // Alert on button click
+  document.querySelectorAll('.btn-success').forEach(btn => {
+    btn.addEventListener('click', () => alert('Button clicked!'));
+  });
+</script>
+
 </body>
 </html>
+
