@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia!</title>
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <!-- Part 1: Multiple Choice -->
+        <div class="section" id="mcq1">
+            <h2>Part 1: Multiple Choice</h2>
+            <hr>
+            <h3 id="q1">What is the approximate ratio of people to sheep in New Zealand?</h3>
+            <div class="choices" role="group" aria-labelledby="q1">
+                <button class="choice" data-correct="false">6 people per 1 sheep</button>
+                <button class="choice" data-correct="false">3 people per 1 sheep</button>
+                <button class="choice" data-correct="false">1 person per 1 sheep</button>
+                <button class="choice" data-correct="false">1 person per 3 sheep</button>
+                <button class="choice" data-correct="true">1 person per 6 sheep</button>
+            </div>
+            <p class="feedback"></p>
+        </div>
+
+        <!-- Extra Multiple Choice -->
+        <div class="section" id="mcq2">
+            <h2>Extra Multiple Choice</h2>
+            <hr>
+            <h3 id="q2">Which planet is known as the Red Planet?</h3>
+            <div class="choices" role="group" aria-labelledby="q2">
+                <button class="choice" data-correct="false">Venus</button>
+                <button class="choice" data-correct="true">Mars</button>
+                <button class="choice" data-correct="false">Jupiter</button>
+                <button class="choice" data-correct="false">Saturn</button>
+            </div>
+            <p class="feedback"></p>
+        </div>
+
+        <!-- Part 2: Free Response -->
+        <div class="section" id="free1">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <h3 id="q3">In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+            <div class="free-row">
+                <input id="free-input1" type="text" placeholder="Type your answer">
+                <button id="free-check1">Submit</button>
+            </div>
+            <p class="feedback"></p>
+        </div>
+
+        <!-- Extra Free Response -->
+        <div class="section" id="free2">
+            <h2>Extra Free Response</h2>
+            <hr>
+            <h3 id="q4">Who wrote the play “Romeo and Juliet”?</h3>
+            <div class="free-row">
+                <input id="free-input2" type="text" placeholder="Type your answer">
+                <button id="free-check2">Submit</button>
+            </div>
+            <p class="feedback"></p>
+        </div>
+    </div>
+</body>
+</html>
